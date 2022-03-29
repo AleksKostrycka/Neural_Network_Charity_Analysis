@@ -12,7 +12,7 @@ The purpose of this project is to use deep-learning neural networks with the Ten
 
 ### Data Preprocessing
 
-* The following variables and neither features nor targets:EIN and NAME are identification information and removed.
+* The following variables and neither features nor targets: EIN and NAME, they are identification information and removed.
 * APPLICATION_TYPE, AFFILIATION, CLASSIFICATION, USE_CASE, ORGANIZATION, STATUS, INCOME_AMT, SPECIAL_CONSIDERATIONS, ASK_AMT are the features for our model.
 * The column IS_SUCCESSFULis considered as the target for our deep learning neural network.
 
@@ -21,7 +21,7 @@ The purpose of this project is to use deep-learning neural networks with the Ten
 * The deep-learning neural network model is made of 2 hidden layers with 80 and 30 neurons respectively. The input data has 43 features and 25,724 samples.To speed up the training process, we are using the activation function ReLU for the hidden layers. As our output is a binary classification, Sigmoid is used on the output layer.
 For the compilation, the optimizer is adam and the loss function is binary_crossentropy.
 
-* The model accuracy is under 75%. Reached a 73% accuracy. This is not a satisfying performance to help predict the outcome of the charity donations.
+* The model accuracy is under 75%. Reached a 73% accuracy. This is not a satisfying performance to help predict the succcess of the charity donations.
 
 * To increase the performance of the model, we applied bucketing to the feature ASK_AMT and organized the different values by intervals.
 We increased the number of neurons on one of the hidden layers, then we used a model with three hidden layers.
